@@ -63,7 +63,7 @@ The app implements **Clean Architecture** with **Offline Caching**, **Infinite S
 ### **Loading State**
 - Displays loading spinner while fetching photos.
 
-![Loading](screenshots/loading.png)
+![Loading](screenshots/loading.jpg)
 
 ---
 
