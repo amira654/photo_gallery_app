@@ -11,14 +11,12 @@ The app implements **Clean Architecture** with **Offline Caching**, **Infinite S
 - **Offline Caching**: View previously loaded photos even without an internet connection (Hive).
 - **Dark/Light Theme**: Switch between themes; preference is saved using SharedPreferences.
 - **Network Indicator**: Banner shows current online/offline status in real-time.
-- **Splash Screen**: Minimalistic splash with Route logo.
+- **Splash Screen**: Minimalistic splash.
 - **Clean Architecture**: Data, Domain, and Presentation layers with Repository Pattern and Dependency Injection.
 
 ---
 
 ## **Screenshots**
-
-> **Note**: Replace these conceptual descriptions with actual screenshots saved in `screenshots/` folder.
 
 ### **Splash Light Mode**
 - Shows splash screen in light mode.
@@ -76,12 +74,6 @@ The app implements **Clean Architecture** with **Offline Caching**, **Infinite S
 
 ---
 
-### **Network Status Indicator**
-- Red banner appears at the top when offline.
-
-![Network Indicator](screenshots/network_indicator.png)
-
----
 
 ## **App Architecture**
 
@@ -118,29 +110,29 @@ This app follows **Clean Architecture** principles, separating concerns into thr
 ## **Project Structure**
 
 lib/
-  core/
-    constants/         # Colors, Strings
-    utils/             # Helpers
-    di/
-     injection.dart
-     network_module.dart
-  features/
-    home/
-      data/
-        models/
-        data_sources/
-        repositories/
-      domain/
-        entities/
-        repositories/
-        usecases/
-      presentation/
-        cubit/
-        screens/
-    splash/
-      cubit/
-      screens/
-  main.dart
+core/
+constants/ # Colors, Strings
+utils/ # Helpers
+di/
+injection.dart
+network_module.dart
+features/
+home/
+data/
+models/
+data_sources/
+repositories/
+domain/
+entities/
+repositories/
+usecases/
+presentation/
+cubit/
+screens/
+splash/
+cubit/
+screens/
+main.dart
 
 ## Setup Instructions
 
